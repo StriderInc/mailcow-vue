@@ -14,7 +14,7 @@
     "lint:eslint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-pattern .gitignore",
     "lint": "run-s lint:*",
     "format": "prettier --write src",
-    "apigen": "npx swagger-typescript-api -p http://localhost:8000/openapi.json -o ./src/shared/api --modular --module-name-first-tag  --no-client --axios"
+    "apigen": "npx swagger-typescript-api generate -p ./openapi.yaml -o ./src/shared/api --modular --module-name-first-tag --axios"
   },
   "dependencies": {
     "@tanstack/vue-query": "^5.67.2",
