@@ -1,0 +1,1 @@
+export * as AccountModel from './model';
