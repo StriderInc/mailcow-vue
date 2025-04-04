@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {watch} from "vue";
 
-import {AccountModel} from 'src/entities/status';
+import { AccountModel } from "@entities/status";
 
 const {checkPingStatus} = AccountModel.usePing();
 const pingStatus = checkPingStatus();
